@@ -1,6 +1,6 @@
-# Ferienwohnung PureVistaHank
+# Ferienwohnung Pure Vista Hank
 
-> Offizielle Website / Webprojekt für die Ferienwohnung „Pure Vista Hank“
+> Offizielle Website: 
 > https://purevistahank-ferienwohnung.42web.io
 
 ## 🏡 Überblick
