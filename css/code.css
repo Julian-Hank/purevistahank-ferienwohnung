@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #009aa0;
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.info{
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 80px;
+}
+
+#code{
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.5em;
+    margin: 20px;
+}

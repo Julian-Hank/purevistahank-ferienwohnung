@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>about</title>
+    <link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\about.css">
+</head>
+
+<body>
+    
+    <header>
+        <div tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="switchLangBtn">
+            <img data-i18n="switchLanguageBtn" id="switchLangBtnImg" src="" alt="">
+            <p id="switchLangBtnText"></p>
+        </div>
+        <img tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="Logo-Top" src="..\images\Logo-Top.png" alt="Pure Vista Hank Logo" onclick="window.location.href='\\'">
+        <img data-i18n="menuBtn" tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="menuBtn" src="..\images\MenuBtn.png" alt="" onclick="toggleSidebar()">
+    </header>
+
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="..\" data-i18n="home">Home</a></li>
+                <!-- <li><a href="..\prices\" data-i18n="prices">Preise</a></li> -->
+                <li><a href="..\booking\" data-i18n="booking">Buchen</a></li>
+                <li><a href="..\more\" data-i18n="more">Umgebung</a></li>
+                <li><a href="" data-i18n="about">Über</a></li>
+                <li><a href="..\contact\" data-i18n="contact">Kontakt</a></li>
+                <li><a href="https://g.page/r/CamUU1P-p5yUEBM/review" data-i18n="rate">Bewerten</a></li>
+            </ul>
+            <img id="sideBarLogo" src="..\images\Logo-Small-Inverted.png" alt="">
+        </nav>
+    </aside>
+
+
+    <main>
+        <section>
+            <h1 data-i18n="aboutTheFlatHeading">Über die Ferienwohnung</h1>
+            <p data-i18n="aboutTheFlatText" class="aboutText">
+                Unsere Ferienwohnung liegt in der Nähe von Basel und des Europa-Parks und ist gut mit dem Auto oder öffentlichen Verkehrsmitteln erreichbar. Restaurants, Supermärkte und Cafés sind nur wenige Minuten entfernt.
+                Die Wohnung bietet modernen Komfort und eine gemütliche Atmosphäre. Mit einer voll ausgestatteten Küche, einem Wintergarten und einem großzügigen Wohnbereich ist sie der ideale Rückzugsort für deinen Aufenthalt.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h1 data-i18n="aboutUsHeading">Über Uns</h1>
+            <p data-i18n="aboutUsText" class="aboutText">
+                Wir sind eine kleine Familie mit einem Kind und leben im schönen Wehr im südlichen Schwarzwald. Die Ferienwohnung befindet sich in der ehemaligen elterlichen Wohnung in Luttingen die wir mit viel Liebe zum Detail renoviert und modernisiert haben – immer mit dem Ziel, eine moderne gemütliche und einladende Atmosphäre zu schaffen.
+                Uns liegt es am Herzen, dass sich unsere Gäste bei uns wie zuhause fühlen. Die ruhige Lage, die Nähe zur Natur und der Charme des Hauses machen den Aufenthalt bei uns zu etwas ganz Besonderem. Ob zum Wandern, Radfahren oder einfach zum Entspannen – unsere Ferienwohnung bietet den idealen Ausgangspunkt für Erholung und Erlebnisse.
+                Wir freuen uns darauf, Sie bei uns willkommen zu heißen und Ihnen einen unvergesslichen Aufenthalt in Luttingen zu ermöglichen!
+            </p>
+            </div>
+            <h2><a id="anyQuestionsLink" data-i18n="anyQuestionsLink" href="../contact">Bei Fragen kontaktieren Sie Uns gerne!</a></h2>
+    </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footerCopyright">&copy; 2025 Pure Vista Hank Ferienwohnung</p>
+        <nav>
+          <a href="..\impressum\" data-i18n="footerImpressum">Impressum</a> | 
+          <a href="..\privacy-policy\" data-i18n="footerDatenschutz">Datenschutz</a> | 
+          <a href="..\agb\" data-i18n="footerAGB">AGB</a> | 
+          <a href="..\contact\" data-i18n="contact">Kontakt</a> | 
+        </nav>
+    </footer>
+
+    <script src="..\base.js"></script>
+    <script>
+        const translations = {
+            de: {
+                home: "Home",
+                prices: "Preise",
+                booking: "Buchen",
+                more: "Umgebung",
+                about: "Über",
+                contact: "Kontakt",
+                rate: "Bewerten",
+
+                aboutTheFlatHeading: "Über die Ferienwohnung",
+                aboutTheFlatText: "Unsere Ferienwohnung liegt in der Nähe von Basel und des Europa-Parks und ist gut mit dem Auto oder öffentlichen Verkehrsmitteln erreichbar. Restaurants, Supermärkte und Cafés sind nur wenige Minuten entfernt. Die Wohnung bietet modernen Komfort und eine gemütliche Atmosphäre. Mit einer voll ausgestatteten Küche, einem Wintergarten und einem großzügigen Wohnbereich ist sie der ideale Rückzugsort für deinen Aufenthalt.",
+                aboutUsText: "Wir sind eine kleine Familie mit einem Kind und leben im schönen Wehr im südlichen Schwarzwald. Die Ferienwohnung befindet sich in der ehemaligen elterlichen Wohnung in Luttingen die wir mit viel Liebe zum Detail renoviert und modernisiert haben – immer mit dem Ziel, eine moderne gemütliche und einladende Atmosphäre zu schaffen. Uns liegt es am Herzen, dass sich unsere Gäste bei uns wie zuhause fühlen. Die ruhige Lage, die Nähe zur Natur und der Charme des Hauses machen den Aufenthalt bei uns zu etwas ganz Besonderem. Ob zum Wandern, Radfahren oder einfach zum Entspannen – unsere Ferienwohnung bietet den idealen Ausgangspunkt für Erholung und Erlebnisse. Wir freuen uns darauf, Sie bei uns willkommen zu heißen und Ihnen einen unvergesslichen Aufenthalt in Luttingen zu ermöglichen!",
+                aboutUsHeading: "Über Uns",
+
+                anyQuestionsLink: "Bei Fragen kontaktieren Sie Uns gerne!",
+
+                footerCopyright: "© 2025 Pure Vista Hank Ferienwohnung",
+                footerImpressum: "Impressum",
+                footerDatenschutz: "Datenschutz",
+                footerAGB: "AGB",
+                footerAbout: "Über"
+            },
+            en: {
+                home: "Home",
+                prices: "Prices",
+                booking: "Booking",
+                more: "Surroundings",
+                about: "About",
+                contact: "Contact",
+                rate: "Rate",
+
+                aboutTheFlatHeading: "About the Holiday Apartment",
+                aboutTheFlatText: "Our holiday apartment is located near Basel and the Europa-Park and is easily accessible by car or public transport. Restaurants, supermarkets, and cafés are just minutes away. The apartment offers modern comforts and a cozy atmosphere. With a fully equipped kitchen, a winter garden, and a spacious living area, it is the ideal retreat for your stay. ",
+                aboutUsText: "We are a small family with one child and live in beautiful Wehr in the southern Black Forest. The holiday apartment is located in our parents' former apartment in Luttingen, which we have renovated and modernized with great attention to detail – always with the goal of creating a modern, cozy, and inviting atmosphere. It is important to us that our guests feel at home. The quiet location, the proximity to nature, and the charm of the house make a stay with us something very special. Whether for hiking, cycling, or simply relaxing – our holiday apartment offers the ideal starting point for relaxation and adventure. We look forward to welcoming you and ensuring you have an unforgettable stay in Luttingen!",
+                aboutUsHeading: "About Us",
+
+                anyQuestionsLink: "If you have any questions, feel free to contact us!",
+
+                footerCopyright: "© 2025 Pure Vista Hank Holiday Apartment",
+                footerImpressum: "Imprint",
+                footerDatenschutz: "Privacy Policy",
+                footerAGB: "Terms and Conditions",
+                footerAbout: "About"
+            }
+        }
+
+        const altTranslations = {
+            de: {
+                switchLanguageBtn: "Sprache Ändern Taste",
+                menuBtn: "Menü Taste"
+            },
+            en: {
+                switchLanguageBtn: "Change Language Button",
+                menuBtn: "Menu Button"
+            }
+        }
+
+        function setAlt(lang){
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = altTranslations[lang]?.[key]
+                if (translation) {
+                    el.setAttribute("alt",translation)
+                }
+            })
+        }
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = translations[lang]?.[key]
+                if (translation) {
+                    el.innerHTML = translation
+                }
+            })
+        }
+
+        function changeFlagDisplay(lang){
+            if (lang == "de"){
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\germanFlagIcon.png")
+            } else{
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\ukFlagIcon.png")
+            }
+            document.getElementById("switchLangBtnText").innerHTML = lang.toUpperCase()
+        }
+
+        var lang = navigator.language.slice(0, 2) === "de" ? "de" : "en"
+        setLanguage(lang)
+        setAlt(lang)
+        changeFlagDisplay(lang)
+        document.documentElement.lang = lang;
+
+        document.getElementById("switchLangBtn").addEventListener("click", function(){
+            lang = lang == "de" ? "en" : "de"
+            setLanguage(lang)
+            setAlt(lang)
+            changeFlagDisplay(lang)
+            document.documentElement.lang = lang;
+        })
+
+    </script>
+
+</body>
+</html>

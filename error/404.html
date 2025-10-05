@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\error.css">
+</head>
+<body>
+    
+    <header>
+        <img id="Logo-Top" src="..\images\Logo-Top.png" alt="Logo" onclick="window.location.href='\\'">
+        <img id="menuBtn" src="..\images\MenuBtn.png" alt="Menu Button" onclick="toggleSidebar()">
+    </header>
+
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="\" data-i18n="home">Home</a></li>
+                <!-- <li><a href="..\prices" data-i18n="prices">Preise</a></li> -->
+                <li><a href="..\booking" data-i18n="booking">Buchen</a></li>
+                <li><a href="..\more.html" data-i18n="more">Umgebung</a></li>
+                <li><a href="..\about" data-i18n="about">Über</a></li>
+                <li><a href="..\contact" data-i18n="contact">Kontakt</a></li>
+                <li><a href="https://g.page/r/CamUU1P-p5yUEBM/review" data-i18n="rate">Bewerten</a></li>
+            </ul>
+            <img id="sideBarLogo" src="..\images\Logo-Small-Inverted.png" alt="">
+        </nav>
+    </aside>
+
+    <main style="padding: 15px;">
+        <h1>404 Not Found</h1>
+        <p>The page you were looking for could not be found!</p>
+        <a href="/">Back to the Homepage</a>
+    </main>
+
+    <footer>
+        <p data-i18n="footerCopyright">&copy; 2025 Pure Vista Hank Ferienwohnung</p>
+        <nav>
+          <a href="..\impressum" data-i18n="footerImpressum">Impressum</a> | 
+          <a href="..\privacy-policy" data-i18n="footerDatenschutz">Datenschutz</a> | 
+          <a href="..\agb" data-i18n="footerAGB">AGB</a> | 
+          <a href="..\contact" data-i18n="footerContact">Kontakt</a> | 
+          <a href="..\about" data-i18n="footerAbout">Über</a>
+        </nav>
+    </footer>
+
+    <script src="..\base.js"></script>
+    
+</body>
+</html>

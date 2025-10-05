@@ -1,0 +1,30 @@
+#mainHeader{
+    text-align: center;
+    text-decoration: underline;
+    color: #009aa0;
+    margin: 40px;
+}
+
+button{
+    display: block;
+    margin: 70px auto;
+    margin-bottom: 60px;
+    background: #2c2c2c;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    width: 200px;
+    font-size: medium;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background: #494949;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

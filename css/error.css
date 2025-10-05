@@ -1,0 +1,41 @@
+html {
+    filter: none !important;
+    background: white !important;
+    color: black !important;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo{
+    width: auto;
+    height: 125px;
+    margin: 30px auto;
+    display: block;
+}
+
+main{
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1{
+    color: #009aa0;
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    color: #009aa0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>validation</title>
+    <link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+    <link rel="stylesheet" href="..\css\popup.css">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\validation.css">
+</head>
+<body>
+    <header>
+        <div tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="switchLangBtn">
+            <img data-i18n="switchLanguageBtn" id="switchLangBtnImg" src="" alt="">
+            <p id="switchLangBtnText"></p>
+        </div>
+        <img tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="Logo-Top" src="..\images\Logo-Top.png" alt="Pure Vista Hank" onclick="window.location.href='\\'">
+        <img data-i18n="menuBtn" tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="menuBtn" src="..\images\MenuBtn.png" alt="" onclick="toggleSidebar()">
+    </header>
+
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="\" data-i18n="home">Home</a></li>
+                <!-- <li><a href="..\prices" data-i18n="prices">Preise</a></li> -->
+                <li><a href="..\booking" data-i18n="booking">Buchen</a></li>
+                <li><a href="..\more" data-i18n="more">Umgebung</a></li>
+                <li><a href="..\about" data-i18n="about">Über</a></li>
+                <li><a href="..\contact" data-i18n="contact">Kontakt</a></li>
+                <li><a href="https://g.page/r/CamUU1P-p5yUEBM/review" data-i18n="rate">Bewerten</a></li>
+            </ul>
+            <img id="sideBarLogo" src="..\images\Logo-Small-Inverted.png" alt="">
+        </nav>
+    </aside>
+    <main>
+        <h1 id="mainHeader">Validierung Ihrer Buchung</h1>
+        <form id="validationForm" method="post" action="../sendValidation.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend data-i18n="personalDataHeader"><b>Persönliche Angaben</b></legend>
+                <label data-i18n="firstName" class="personalDataLabel" for="firstName">Vorname:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label data-i18n="lastName" class="personalDataLabel" for="lastName">Nachname:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+                
+                <label data-i18n="address" class="personalDataLabel" for="address">Adresse:</label>
+                <input type="text" id="address" name="address" required><br>
+
+                <label data-i18n="zip" class="personalDataLabel" for="zip">PLZ:</label>
+                <input type="text" id="zip" name="zip" pattern="\d{4,5}" required><br>
+
+                <label data-i18n="city" class="personalDataLabel" for="city">Ort:</label>
+                <input type="text" id="city" name="city" required><br>
+
+                <label data-i18n="country" class="personalDataLabel" for="country">Land:</label>
+                <input type="text" id="country" name="country" required>
+            </fieldset>
+
+            <fieldset id="ausweisData">
+                <legend data-i18n="ausweisDataHeader"><b>Ausweisdaten</b></legend>
+                <label data-i18n="idNum" class="ausweisDataLabel" for="idNumber">Ausweisnummer:</label>
+                <input type="text" id="idNumber" name="idNumber" required><br>
+                
+                <label data-i18n="birthdate" class="ausweisDataLabel" for="birthDate">Geburtsdatum:</label>
+                <input type="date" id="birthDate" name="birthDate" required><br>
+                
+                <label data-i18n="Ablaufdatum" class="ausweisDataLabel" for="expiryDate">Ablaufdatum:</label>
+                <input type="date" id="expiryDate" name="expiryDate" required>
+
+                <label data-i18n="photoText" for="idUpload">Foto / Scan des Ausweises (optional):</label>
+                <input type="file" id="idUpload" name="idUpload" accept="image/*,.pdf">
+            </fieldset>
+            <label data-i18n="agbAccept" style="margin: 10px; margin-bottom: 25px; text-align: center; display: block;" for="agbAccept">Ich bestätige, dass ich die <a href="#" onclick="toggleAGB()">AGB</a> gelesen habe und akzeptiere sie <input required type="checkbox" name="agbAccept" id=""></label>
+
+            <!-- <img id="ausweisImg" src="..\images\bub_der_personalausweis.png" alt="bild"> -->
+
+            <!-- <fieldset>
+                <legend><b>Aufenthaltszeitraum</b></legend>
+                <label for="startDate">Anreise:</label>
+                <input type="date" id="startDate" name="startDate" required><br>
+
+                <label for="endDate">Abreise:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </fieldset> -->
+
+            <div id="btnWrapper">
+                <button type="submit">Buchung validieren</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p data-i18n="footerCopyright">&copy; 2025 Pure Vista Hank Ferienwohnung</p>
+        <nav>
+          <a href="..\impressum\" data-i18n="footerImpressum">Impressum</a> | 
+          <a href="..\privacy-policy\" data-i18n="footerDatenschutz">Datenschutz</a> | 
+          <a href="..\agb\" data-i18n="footerAGB">AGB</a> | 
+          <a href="..\contact\" data-i18n="footerContact">Kontakt</a> | 
+          <a href="..\about\" data-i18n="footerAbout">Über</a>
+        </nav>
+    </footer>
+    
+    <script src="..\base.js"></script> 
+    <script src="validation.js"></script> 
+    <script>
+        const translations = {
+            de: {
+                home: "Home",
+                prices: "Preise",
+                booking: "Buchen",
+                more: "Umgebung",
+                about: "Über",
+                contact: "Kontakt",
+                rate: "Bewerten",
+
+                personalDataHeader: "<b>Persönliche Angaben</b>",
+                firstName: "Vorname:",
+                lastName: "Nachname:",
+                address: "Adresse:",
+                zip: "PLZ:",
+                city: "Ort:",
+                country: "Land:",
+
+                ausweisDataHeader: "<b>Ausweisdaten</b>",
+                idNum: "Ausweisnummer:",
+                birthdate: "Geburtsdatum:",
+                expirydate: "Ablaufdatum:",
+                photoText: "Foto / Scan des Ausweises (optional):",
+                agbAccept: "Ich bestätige, dass ich die <a href='#' onclick='toggleAGB()'>AGB</a> gelesen habe und akzeptiere sie <input required type='checkbox' name='agbAccept'>",
+                
+                footerCopyright: "© 2025 Pure Vista Hank Ferienwohnung",
+                footerImpressum: "Impressum",
+                footerDatenschutz: "Datenschutz",
+                footerAGB: "AGB",
+                footerWiderruf: "Widerrufsbelehrung",
+                footerAbout: "Über"
+            },
+            en: {
+                home: "Home",
+                prices: "Prices",
+                booking: "Booking",
+                more: "Surroundings",
+                about: "About",
+                contact: "Contact",
+                rate: "Rate",
+                
+                personalDataHeader: "<b>Personal Information</b>",
+                firstName: "First Name:",
+                lastName: "Last Name:",
+                address: "Address:",
+                zip: "ZIP:",
+                city: "City:",
+                country: "Country:",
+                
+                ausweisDataHeader: "<b>ID data</b>",
+                idNum: "ID number:",
+                birthdate: "Birthdate:",
+                expirydate: "Expiry date:",
+                photoText: "Photo / scan of ID (optional):",
+                agbAccept: "I confirm that I have read and accept the <a href='#' onclick='toggleAGB()'>Terms and Conditions</a> <input required type='checkbox' name='agbAccept'>",
+
+                footerCopyright: "© 2025 Pure Vista Hank Holiday Apartment",
+                footerImpressum: "Imprint",
+                footerDatenschutz: "Privacy Policy",
+                footerAGB: "Terms and Conditions",
+                footerWiderruf: "Cancellation Policy",
+                footerAbout: "About"
+            }
+        }
+
+
+        const altTranslations = {
+            de: {
+                switchLanguageBtn: "Sprache Ändern Taste",
+                menuBtn: "Menü Taste"
+            },
+            en: {
+                switchLanguageBtn: "Change Language Button",
+                menuBtn: "Menu Button"
+            }
+        }
+
+        function setAlt(lang){
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = altTranslations[lang]?.[key]
+                if (translation) {
+                    el.setAttribute("alt",translation)
+                }
+            })
+        }
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = translations[lang]?.[key]
+                if (translation) {
+                    el.innerHTML = translation
+                }
+            })
+        }
+
+        function changeFlagDisplay(lang){
+            if (lang == "de"){
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\germanFlagIcon.png")
+            } else{
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\ukFlagIcon.png")
+            }
+            document.getElementById("switchLangBtnText").innerHTML = lang.toUpperCase()
+        }
+
+        var lang = navigator.language.slice(0, 2) === "de" ? "de" : "en"
+        setLanguage(lang)
+        setAlt(lang)
+        changeFlagDisplay(lang)
+        document.documentElement.lang = lang;
+
+        document.getElementById("switchLangBtn").addEventListener("click", function(){
+            lang = lang == "de" ? "en" : "de"
+            setLanguage(lang)
+            setAlt(lang)
+            changeFlagDisplay(lang)
+            document.documentElement.lang = lang;
+        })
+
+    </script>
+</body>
+</html>

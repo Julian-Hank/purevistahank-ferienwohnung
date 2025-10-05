@@ -1,0 +1,363 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../css/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+  url('../css/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../css/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+  url('../css/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{
+    font-family: "Montserrat", serif;
+}
+
+/* #menuBtn:active{
+    rotate: 180deg;
+} */
+
+#imageGallery{
+    display: flex;
+    justify-content: space-between;
+    background: #009aa0;
+    height: 60dvh;
+}
+
+.displayedImg{
+    display: none;
+    max-width: 900px;
+    transition: opacity 0.5s ease-in-out; /* Fade-Effekt */
+}
+
+#currentImg{
+    display: block;
+}
+
+#overlay{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+#overlayImg{
+    position: relative;
+    margin-top: 16px;
+    max-width: 94%;
+    max-height: 94%;
+    scale: 0;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+.arrowWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    z-index: 99;
+}
+
+#arrowLeft,
+#arrowRight{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#arrowLeft{
+    /* margin-left: 80px; */
+    rotate: 90deg;
+}
+#arrowRight{
+    rotate: -90deg;
+    /* margin-right: 80px; */
+}
+
+#cards{
+    position: relative;
+    margin-top: 4em;
+    display: flex;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.infoCard{
+    margin-bottom: 4em;
+    border-radius: 40px;
+    background: #bdbdbd;
+    color: #222;
+    height: 550px;
+    width: 500px;
+    z-index: 2;
+    font-size: 1.25rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px;
+}
+
+.infoCard h1{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.infoCard img{
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    border-radius: 30px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.infoCard p{
+    margin: 40px;
+    text-align: center;
+    /* text; */
+}
+
+.balken{
+    position: absolute;
+    width: 100%;
+    height: 6em;
+    background: #009aa0;
+}
+
+#b0{
+    top: 150px;
+}
+
+#b1{
+    top: 800px;
+}
+#b2{
+    display: none;
+}
+
+#b3{
+    display: none;
+}
+#b4{
+    display: none;
+}
+
+#b5{
+    display: none;
+}
+
+#btnWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -25px;
+}
+
+hr{
+    margin-top: 25px;
+    height: 2px;
+    width: 750px;
+    width: 39dvw;
+    border: none;
+    background: #000;
+}
+
+button{
+    background: #2c2c2c;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    width: 200px;
+    font-size: medium;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background: #494949;
+}
+
+@media (max-width: 1620px) {
+    #cards{
+        flex-basis: 420px;
+    }
+    .infoCard{
+        width: 420px;
+    }
+}
+
+@media (max-width: 1401px) {
+    .displayedImg{
+        max-width: 750px;
+    }
+    #cards{
+        flex-basis: 500px;
+    }
+    .infoCard{
+        width: 500px;
+    }
+    #b2{
+        display: block;
+        top: 1450px;
+    }
+    /* #sideBarLogo{
+        right: 30px;
+        width: 50px;
+    } */
+       
+}
+
+@media (max-width: 1155px) {
+    .displayedImg{
+        max-width: 700px;
+    }
+
+    .arrowWrapper{
+        width: 15%;
+    }
+
+    #arrowLeft,
+    #arrowRight{
+        width: 80px;
+        height: 80px;
+    }
+    #cards{
+        /* display: none; */
+        flex-basis: 420px;
+    }
+    .infoCard{
+        width: 420px;
+    }
+    hr{
+        width: 35dvw;
+    }
+}
+
+@media (max-width: 950px){
+
+    #imageGallery{
+        position: relative;
+    }
+
+    .displayedImg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-width: 100vw;
+    }
+
+    .arrowWrapper{
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (max-width: 900px) {
+    #cards{
+        flex-basis: 80%;
+    }
+    .infoCard{
+        width: 80%;
+        height: 500px;
+    }
+    hr{
+        width: 30dvw;
+    }
+    #b1{
+        top: 750px;
+    }
+    #b2{
+        top: 1350px;
+    }
+    #b3{
+        display: block;
+        top: 1950px;
+    }
+    #b4{
+        display: block;
+        top: 2550px;
+    }
+    #b5{
+        display: block;
+        top: 3150px;
+    }
+}
+
+@media (max-width: 607px) {
+    #arrowLeft,
+    #arrowRight{
+        width: 50px;
+        height: 50px;
+    }
+
+    .infoCard{
+        height: 500px;
+        font-size: 1.15rem;
+    }
+
+    .infoCard p{
+        margin: 20px;
+    }
+
+    hr{
+        width: 24dvw;
+    }
+}
+
+
+@media (max-width: 462px) {
+    .infoCard{
+        height: 500px;
+        font-size: 1.1rem;
+    }
+    hr{
+        width: 19dvw;
+    }
+}
+
+@media (max-width: 381px) {
+    .infoCard{
+        height: 480px;
+        font-size: 1rem;
+    }
+    hr{
+        width: 17dvw;
+    }
+    #b1{
+        top: 720px;
+    }
+    #b2{
+        top: 1275px;
+    }
+    #b3{
+        display: block;
+        top: 1850px;
+    }
+    #b4{
+        display: block;
+        top: 2400px;
+    }
+    #b5{
+        display: block;
+        top: 3000px;
+    }
+}
+
+/* Design funktioniert bis mind. 340px bildschirmbreite  */

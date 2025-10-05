@@ -1,0 +1,95 @@
+#mainHeader{
+    text-align: center;
+    text-decoration: underline;
+    color: #009aa0;
+    margin: 40px;
+}
+
+fieldset{
+    margin: 20px auto;
+    width: 600px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: 1.5px solid #2c2c2c;
+}
+
+legend{
+    color: #009aa0;
+}
+
+fieldset input{
+    margin: 10px;
+}
+
+label{
+    display: inline-block;
+}
+
+.personalDataLabel{
+    width: 95px;
+}
+
+.ausweisDataLabel{
+    width: 140px;
+}
+
+input[type="text"],
+input[type="date"] {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 6px;
+    width: 165px;
+}
+
+#btnWrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+#expiryDate{
+    margin-right: 55px;
+}
+
+#idUpload{
+    margin: 10px 0;
+    width: 240px;
+}
+
+button{
+    background: #2c2c2c;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    width: 200px;
+    font-size: medium;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #494949;
+}
+
+hr{
+    margin-top: 25px;
+    height: 2px;
+    width: 750px;
+    width: 39dvw;
+    border: none;
+    background: #000;
+}
+
+@media (max-width: 770px){
+    fieldset{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    #expiryDate{
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>booking</title>
+    <meta name="google-site-verification" content="B9qxzipCgB5_XlFKgcU3LfUP6iUOTlwCqjhp5tQ9hFQ" />
+    <link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\booking.css">
+</head>
+<body>
+    
+    <header>
+        <div tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="switchLangBtn">
+            <img data-i18n="switchLanguageBtn" id="switchLangBtnImg" src="" alt="">
+            <p id="switchLangBtnText"></p>
+        </div>
+        <img tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="Logo-Top" src="..\images\Logo-Top.png" alt="Pure Vista Hank Logo" onclick="window.location.href='\\'">
+        <img data-i18n="menuBtn" tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="menuBtn" src="..\images\MenuBtn.png" alt="" onclick="toggleSidebar()">
+    </header>
+
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="\" data-i18n="home">Home</a></li>
+                <li><a href="..\booking" data-i18n="booking">Buchen</a></li>
+                <li><a href="..\more" data-i18n="more">Umgebung</a></li>
+                <li><a href="..\about" data-i18n="about">Über</a></li>
+                <li><a href="..\contact" data-i18n="contact">Kontakt</a></li>
+                <li><a href="https://g.page/r/CamUU1P-p5yUEBM/review" data-i18n="rate">Bewerten</a></li>
+            </ul>
+            <img id="sideBarLogo" src="..\images\Logo-Small-Inverted.png" alt="">
+        </nav>
+    </aside>
+
+    <main>
+        <h1 data-i18n="bookUsText" id="mainHeader">Buchen Sie uns hier!</h1>
+        <section class="bookingProviders">
+            <!-- <div class="bookingProvider">
+                <h1 class="bookingProviderName">Booking.com</h1>
+                <img class="logo" id="bookingcomLogo" src="..\images\Booking.com_logo2.png" alt="Booking.com Logo" width="100">
+                <p data-i18n="bookOnBookingcom"><a href="https://www.booking.com/hotel/de/pure-vista-hank-schwarzwaldblick.de.html">Jetzt buchen auf Booking.com</a></p>
+            </div> -->
+            <div class="bookingProvider">
+                <h1 class="bookingProviderName">Ferienhausmiete.de</h1>
+                <img class="logo" id="ferienhausmietedeLogo" src="..\images\Ferienhausmietede_logo.png" alt="Ferienhausmiete.de Logo" width="130">
+                <p data-i18n="bookOnferienhausmietede"><a href="https://www.ferienhausmiete.de/4774905.htm">Jetzt buchen auf Ferienhausmiete.de</a></p>
+            </div>
+            <div class="bookingProvider">
+                <h1 class="bookingProviderName">Airbnb</h1>
+                <img class="logo" id="airbnbLogo" src="..\images\Airbnb-Logo.wine.png" alt="Airbnb Logo" width="100">
+                <p data-i18n="bookOnAirbnb"><a href="https://www.airbnb.de/rooms/1457253045627306751?viralityEntryPoint=1&s=76">Jetzt buchen auf Airbnb</a></p>
+            </div>
+            <div class="bookingProvider">
+                <h1 class="bookingProviderName">Holidu</h1>
+                <img class="logo" id="holiduLogo" src="..\images\Holidu_Logo_1.png" alt="Holidu Logo" width="100">
+                <p data-i18n="bookOnHolidu"><a href="https://www.holidu.de/d/64281849">Jetzt buchen auf Holidu</a></p>
+            </div>
+            <!-- <div class="bookingProvider">
+                <h1 class="bookingProviderName">Check24</h1>
+                <img class="logo" id="check24Logo" src="..\images\CHECK24.png" alt="" width="100">
+                <p data-i18n=""><a href="">Jetzt buchen auf check24</a></p>
+            </div> -->
+            <div class="bookingProvider">
+                <h1 class="bookingProviderName">FeWo-direkt</h1>
+                <img class="logo" id="fewoLogo" src="..\images\Fewo-direkt.png" alt="FeWo-direkt Logo" width="100">
+                <p data-i18n="bookOnFeWo"><a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5652500">Jetzt buchen auf FeWo-direkt</a></p>
+            </div>
+            <!-- <div class="bookingProvider">
+                <h1 class="bookingProviderName">HomeToGo</h1>
+                <img class="logo" id="HomeToGoLogo" src="..\images\" alt="" width="100">
+                <p data-i18n=""><a href="">Jetzt buchen auf HomeToGo</a></p>
+            </div> -->
+        </section>
+        <!-- <section>
+            <h1 data-i18n="priceText" id="priceText">Wollen Sie zuerst unsere Preise ansehen?</h1>
+            <button data-i18n="priceBtnText" onclick="window.location.href = '..\\prices'">Zu den Preisen</button>
+        </section> -->
+        
+        <p data-i18n="logoInfo" id="logoInfo"><i>Logos dienen nur zur Verlinkung. Alle Marken sind Eigentum ihrer jeweiligen Inhaber.</i></p>
+
+    </main>
+
+    <footer>
+        <p data-i18n="footerCopyright">&copy; 2025 Pure Vista Hank Ferienwohnung</p>
+        <nav>
+          <a href="..\impressum" data-i18n="footerImpressum">Impressum</a> | 
+          <a href="..\privacy-policy" data-i18n="footerDatenschutz">Datenschutz</a> | 
+          <a href="..\agb" data-i18n="footerAGB">AGB</a> | 
+          <a href="..\contact" data-i18n="footerContact">Kontakt</a> | 
+          <a href="..\about" data-i18n="footerAbout">Über</a>
+        </nav>
+    </footer>
+
+    <script src="..\base.js"></script>
+    <script>
+        const translations = {
+            de: {
+                home: "Home",
+                prices: "Preise",
+                booking: "Buchen",
+                more: "Umgebung",
+                about: "Über",
+                contact: "Kontakt",
+                rate: "Bewerten",
+
+                bookUsText: "Buchen Sie uns hier!",
+                bookOnferienhausmietede: "<a href='https://www.ferienhausmiete.de/4774905.htm'>Jetzt buchen auf Ferienhausmiete.de</a>",
+                bookOnBookingcom: "<a href='https://www.booking.com/hotel/de/pure-vista-hank-schwarzwaldblick.de.html'>Jetzt buchen auf Booking.com</a>",
+                bookOnAirbnb: "<a href='https://www.airbnb.de/rooms/1457253045627306751?viralityEntryPoint=1&s=76'>Jetzt buchen auf Airbnb</a>",
+                bookOnHolidu: "<a href='https://www.holidu.de/d/64281849'>Jetzt buchen auf Holidu</a>",
+                bookOnFeWo: "<a href='https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5652500'>Jetzt buchen auf FeWo-direkt</a>",
+
+                priceText: "Wollen Sie zuerst unsere Preise sehen?",
+                priceBtnText: "Zu den Preisen",
+
+                logoInfo: "<i>Logos dienen nur zur Verlinkung. Alle Marken sind Eigentum ihrer jeweiligen Inhaber.</i>",
+
+                footerCopyright: "© 2025 Pure Vista Hank Ferienwohnung",
+
+                footerImpressum: "Impressum",
+                footerDatenschutz: "Datenschutz",
+                footerAGB: "AGB",
+                footerAbout: "Über"
+            },
+            en: {
+                home: "Home",
+                prices: "Prices",
+                booking: "Booking",
+                more: "Surroundings",
+                about: "About",
+                contact: "Contact",
+                rate: "Rate",
+
+                bookUsText: "Book us here!",
+                bookOnferienhausmietede: "<a href='https://www.ferienhausmiete.de/4774905.htm'>Book now on Ferienhausmiete.de</a>",
+                bookOnBookingcom: "<a href='https://www.booking.com/hotel/de/pure-vista-hank-schwarzwaldblick.de.html'>Book now on Booking.com</a>",
+                bookOnAirbnb: "<a href='https://www.airbnb.de/rooms/1457253045627306751?viralityEntryPoint=1&s=76'>Book now on Airbnb</a>",
+                bookOnHolidu: "<a href='https://www.holidu.de/d/64281849'>Book now on Holidu</a>",
+                bookOnFeWo: "<a href='https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5652500'>Book now on FeWo-direkt</a>",
+
+                priceText: "Want to see our prices first?",
+                priceBtnText: "To the prices",
+
+                logoInfo: "<i>Logos are for linking purposes only. All trademarks are the property of their respective owners.</i>",
+
+                footerCopyright: "© 2025 Pure Vista Hank Holiday Apartment",
+
+                footerImpressum: "Imprint",
+                footerDatenschutz: "Privacy Policy",
+                footerAGB: "Terms and Conditions",
+                footerAbout: "About"
+            }
+        }
+
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = translations[lang]?.[key]
+                if (translation) {
+                el.innerHTML = translation
+                }
+            })
+        }
+
+        function changeFlagDisplay(lang){
+            if (lang == "de"){
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\germanFlagIcon.png")
+            } else{
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\ukFlagIcon.png")
+            }
+            document.getElementById("switchLangBtnText").innerHTML = lang.toUpperCase()
+        }
+
+        var lang = navigator.language.slice(0, 2) === "de" ? "de" : "en"
+        setLanguage(lang)
+        changeFlagDisplay(lang)
+        document.documentElement.lang = lang;
+
+        document.getElementById("switchLangBtn").addEventListener("click", function(){
+            lang = lang == "de" ? "en" : "de"
+            setLanguage(lang)
+            setAlt(lang)
+            changeFlagDisplay(lang)
+            document.documentElement.lang = lang;
+        })
+
+    </script>
+</body>
+</html>

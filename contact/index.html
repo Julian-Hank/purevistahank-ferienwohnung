@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>contact</title>
+    <meta name="google-site-verification" content="B9qxzipCgB5_XlFKgcU3LfUP6iUOTlwCqjhp5tQ9hFQ" />
+    <link rel="icon" type="image/x-icon" href="..\images\favicon.ico">
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\contact.css">
+</head>
+<body>
+    
+    <header>
+        <div tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="switchLangBtn">
+            <img data-i18n="switchLanguageBtn" id="switchLangBtnImg" src="" alt="">
+            <p id="switchLangBtnText"></p>
+        </div>
+        <img tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="Logo-Top" src="..\images\Logo-Top.png" alt="Pure Vista Hank Logo" onclick="window.location.href='\\'">
+        <img data-i18n="menuBtn" tabindex="0" role="button" onkeydown="if(event.key==='Enter'){ this.click(); }" id="menuBtn" src="..\images\MenuBtn.png" alt="" onclick="toggleSidebar()">
+    </header>
+
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="\" data-i18n="home">Home</a></li>
+                <!-- <li><a href="..\prices" data-i18n="prices">Preise</a></li> -->
+                <li><a href="..\booking" data-i18n="booking">Buchen</a></li>
+                <li><a href="..\more" data-i18n="more">Umgebung</a></li>
+                <li><a href="..\about" data-i18n="about">Über</a></li>
+                <li><a href="..\contact" data-i18n="contact">Kontakt</a></li>
+                <li><a href="https://g.page/r/CamUU1P-p5yUEBM/review" data-i18n="rate">Bewerten</a></li>
+            </ul>
+            <img id="sideBarLogo" src="..\images\Logo-Small-Inverted.png" alt="">
+        </nav>
+    </aside>
+
+    <main>
+        <h1 data-i18n="contact">Kontakt</h1>
+        <address>
+            <h2 data-i18n="address">Adresse</h2>
+            <h2 data-i18n="email">Email</h2>
+            <a href="https://maps.app.goo.gl/Jgs1T1cWT1Qgq6kC7">Stadenhauser Str. 19, 79725 Laufenburg</a>
+            <a href="mailto:Fewolofthank@gmx.net">Fewolofthank@gmx.net</a>
+            <h2 data-i18n="mobile">Mobil</h2>
+            <h2 data-i18n="telephone">Telefon</h2>
+            <a href="tel:+491733189961">+49 173 318 9961</a>
+            <a href="tel:+497762565296">+49 7762 565 296</a>
+        </address>
+    </main>
+
+    <footer>
+        <p data-i18n="footerCopyright">&copy; 2025 Pure Vista Hank Ferienwohnung</p>
+        <nav>
+          <a href="..\impressum" data-i18n="footerImpressum">Impressum</a> | 
+          <a href="..\privacy-policy" data-i18n="footerDatenschutz">Datenschutz</a> | 
+          <a href="..\agb" data-i18n="footerAGB">AGB</a> | 
+          <a href="..\about" data-i18n="footerAbout">Über</a>
+        </nav>
+    </footer>
+
+    <script src="..\base.js"></script>
+    <script>
+        const translations = {
+            de: {
+                home: "Home",
+                prices: "Preise",
+                booking: "Buchen",
+                more: "Umgebung",
+                about: "Über",
+                contact: "Kontakt",
+                rate: "Bewerten",
+
+                address: "Adresse",
+                email: "E-Mail",
+                mobile: "Mobil",
+                telephone: "Telefon",
+
+                footerCopyright: "© 2025 Pure Vista Hank Ferienwohnung",
+
+                footerImpressum: "Impressum",
+                footerDatenschutz: "Datenschutz",
+                footerAGB: "AGB",
+                footerAbout: "Über"
+            },
+            en: {
+                home: "Home",
+                prices: "Prices",
+                booking: "Booking",
+                more: "Surroundings",
+                about: "About",
+                contact: "Contact",
+                rate: "Rate",
+
+                address: "Address",
+                email: "E-mail",
+                mobile: "Mobile",
+                telephone: "Telephone",
+
+                footerCopyright: "© 2025 Pure Vista Hank Holiday Apartment",
+
+                footerImpressum: "Imprint",
+                footerDatenschutz: "Privacy Policy",
+                footerAGB: "Terms and Conditions",
+                footerAbout: "About"
+            }
+        }
+
+
+        const altTranslations = {
+            de: {
+                switchLanguageBtn: "Sprache Ändern Taste",
+                menuBtn: "Menü Taste"
+            },
+            en: {
+                switchLanguageBtn: "Change Language Button",
+                menuBtn: "Menu Button"
+            }
+        }
+
+        function setAlt(lang){
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = altTranslations[lang]?.[key]
+                if (translation) {
+                    el.setAttribute("alt",translation)
+                }
+            })
+        }
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]')
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n')
+                const translation = translations[lang]?.[key]
+                if (translation) {
+                    el.innerHTML = translation
+                }
+            })
+        }
+
+        function changeFlagDisplay(lang){
+            if (lang == "de"){
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\germanFlagIcon.png")
+            } else{
+                document.getElementById("switchLangBtnImg").setAttribute("src", "..\\images\\ukFlagIcon.png")
+            }
+            document.getElementById("switchLangBtnText").innerHTML = lang.toUpperCase()
+        }
+
+        var lang = navigator.language.slice(0, 2) === "de" ? "de" : "en"
+        setLanguage(lang)
+        setAlt(lang)
+        changeFlagDisplay(lang)
+        document.documentElement.lang = lang;
+
+        document.getElementById("switchLangBtn").addEventListener("click", function(){
+            lang = lang == "de" ? "en" : "de"
+            setLanguage(lang)
+            setAlt(lang)
+            changeFlagDisplay(lang)
+            document.documentElement.lang = lang;
+        })
+
+    </script>
+</body>
+</html>

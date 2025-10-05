@@ -1,0 +1,147 @@
+*{
+    font-family: "Montserrat", serif;
+}
+
+#mainHeader{
+    text-align: center;
+    text-decoration: underline;
+    color: #009aa0;
+    margin: 40px;
+}
+
+.attractionsDescripton{
+    text-align: center;
+}
+
+.nearbyAttractions{
+    position: relative;
+    display: flex;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.attraction{
+    margin-bottom: 4em;
+    border-radius: 40px;
+    background: #bdbdbd;
+    color: #222;
+    height: 495px;
+    width: 500px;
+    z-index: 2;
+    font-size: 1.25rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px;
+}
+
+.attraction h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 70px;
+}
+
+.attraction img{
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    border-radius: 30px;
+    height: 235px;
+    object-fit: cover;
+}
+
+.attraction p{
+    margin: 35px;
+    text-align: center;
+    /* text; */
+}
+
+.attraction .imageCredit{
+    margin: unset;
+    font-size: .75em;
+}
+
+.balken{
+    position: absolute;
+    width: 100%;
+    height: 6em;
+    background: #009aa0;
+}
+
+
+@media (max-width: 1620px) {
+    .nearbyAttractions{
+        flex-basis: 420px;
+    }
+    .attraction{
+        width: 420px;
+    }
+    .attraction p{
+        margin: 25px;
+    }
+}
+
+@media (max-width: 1441px) {
+    .nearbyAttractions{
+        flex-basis: 500px;
+    }
+    .attraction{
+        width: 500px;
+    }
+       
+}
+
+@media (max-width: 1155px) {
+    .nearbyAttractions{
+        flex-basis: 420px;
+    }
+    .attraction{
+        width: 420px;
+    }
+
+    .attraction p{
+        margin: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .attraction h1{
+        margin-bottom: 15px;
+    }
+    .nearbyAttractions{
+        flex-basis: 80%;
+    }
+    .attraction{
+        width: 80%;
+        height: 480px;
+    }
+}
+
+@media (max-width: 607px) {
+    .attraction{
+        font-size: 1.15rem;
+        height: fit-content;
+    }
+
+    .attraction p{
+        margin: 25px;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .attraction{
+        font-size: 1.1rem;
+        width: 85%;
+    }
+}
+
+@media (max-width: 369px) {
+    .attraction{
+        font-size: 1rem;
+    }
+}

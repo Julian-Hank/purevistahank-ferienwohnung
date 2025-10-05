@@ -1,0 +1,98 @@
+.popup{
+    padding: 10px 20px;
+    padding-top: 0;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #d4d4eb;
+    width: 50%;
+    max-width: 615px;
+    min-width: 500px;
+    height: fit-content;
+}
+
+.popupBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(48, 0, 79, 0.1); */
+    z-index: 99;
+}
+
+.optionWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.popup input{
+    display: block;
+    height: 30px;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1.05em;
+    line-height: 20px;
+    color: #009aa0;
+}
+
+.popup button {
+    background-color: #009aa0;
+    /* background-image: linear-gradient(#8614f8 0, #760be0 100%); */
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+    outline: 0;
+    text-align: center;
+    transition: all .3s cubic-bezier(.05, .03, .35, 1);
+    width: 190px;
+}
+
+.popup button:hover{
+    opacity: 0.75;
+}
+
+@media (max-width: 1100px){
+    .popup input{
+        width: 400px;
+    }
+}
+
+@media (max-width: 800px){
+    .popup{
+        width: 45%;
+        min-width: 350px;
+    }
+    .popup input{
+        width: 80%;
+    }
+    .optionWrapper button{
+        width: 125px;
+    }
+}
+
+@media (max-width: 475px){
+    .popup{
+        width: 45%;
+        min-width: 285px;
+    }
+    .optionWrapper button{
+        width: 105px;
+    }
+
+}
