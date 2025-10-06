@@ -1,31 +1,30 @@
-# Ferienwohnung Pure Vista Hank
+# Holiday Apartment Pure Vista Hank  
 
-> Offizielle Website: 
-> https://purevistahank-ferienwohnung.42web.io
+> Official Website:   
+> https://purevistahank-ferienwohnung.42web.io  
 
-## 🏡 Überblick
+## 🏡 Overview  
 
-Dies ist die Webpräsenz / Website für die Ferienwohnung **Pure Vista Hank**.  
-Ziel ist es, Gästen eine ansprechende, übersichtliche Darstellung der Unterkunft, Ausstattung, Bildergalerie, Kontaktinformationen und Buchungsmöglichkeiten zu bieten.
+This is the web presence / website for the holiday apartment **Pure Vista Hank**.    
+The goal is to provide guests with an appealing and clear presentation of the accommodation, amenities, photo gallery, contact information, and booking options.  
 
-Die Seite ist in einem einfachen Stil gehalten und soll responsiv sein, sodass sie auch auf mobilen Geräten gut funktioniert.
+The website is kept in a simple style and is designed to be responsive, so it also works well on mobile devices.  
 
-## Inhalte / Features
+## Contents / Features  
 
-- Startseite mit Bilder und Hauptmerkmalen der Ferienwohnung 
-- Informationen zur Unterkunft sowie zu Möglichen aktivitäten in der Nähe
-- Galerie / Bilder  
-- Kontaktinformationen  
-- Impressum & Datenschutz  
-- Verlinkung zu externen Buchungsdiensten  
-- Responsives Design (Desktop / Tablet / Mobil)  
+- Homepage with pictures and main features of the holiday apartment   
+- Information about the accommodation as well as possible activities nearby  
+- Gallery / Images    
+- Contact information    
+- Legal Notice & Privacy Policy    
+- Links to external booking services    
+- Responsive design (Desktop / Tablet / Mobile)    
 
-## Technologie-Stack
+## Technology Stack  
 
-- HTML5  
-- CSS3  
-- JavaScript
-- PHP 
-- SQL 
-- Nutzung des Hosting-Providers Infinityfree
-  
+- HTML5    
+- CSS3    
+- JavaScript  
+- PHP   
+- SQL   
+- Using the hosting provider Infinityfree
