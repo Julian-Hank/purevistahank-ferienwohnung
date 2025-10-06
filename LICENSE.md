@@ -4,15 +4,15 @@ All rights reserved.
 
 Copyright (c) 2025 Julian Hank
 
-Alle Rechte vorbehalten.  
-Die Inhalte dieses Repositories (Code, Texte, Bilder, Design) dürfen ohne ausdrückliche schriftliche Genehmigung des Rechteinhabers weder ganz noch teilweise:
+All rights reserved.  
+The contents of this repository (code, texts, images, design) may not, in whole or in part, be:
 
-- kopiert  
-- verändert  
-- veröffentlicht  
-- weiterverbreitet  
-- kommerziell genutzt  
+- copied  
+- modified  
+- published  
+- redistributed  
+- used commercially  
 
-werden.  
+without the express written permission of the copyright holder.  
 
-Für Anfragen zur Nutzung bitte den Rechteinhaber direkt kontaktieren.
+For usage requests, please contact the copyright holder directly.
